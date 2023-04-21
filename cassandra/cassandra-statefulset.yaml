@@ -88,6 +88,7 @@ spec:
       name: cassandra-data
       annotations:
         volume.beta.kubernetes.io/storage-class: standard
+        kapp.k14s.io/owned-for-deletion:
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
